@@ -1,0 +1,27 @@
+enum Role {
+  ADMIN
+  AUTHOR
+  USER
+}
+
+enum Status {
+  ACTIVE
+  INACTIVE
+}
+
+enum PostStatus {
+  PUBLISHED
+  DRAFT
+  ARCHIVED
+}
+
+enum CommentStatus {
+  APPROVED
+  REJECTED
+}
+
+enum SubcriptionStatus {
+  ACTIVE
+  CANCELLED
+  EXPIRED 
+}

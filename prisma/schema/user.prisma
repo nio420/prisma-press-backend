@@ -1,0 +1,17 @@
+model User {
+  id            String   @id @default(uuid())
+  name          String
+  email         String   @unique
+  password      String
+  active_status Status   @default(ACTIVE)
+  role          Role     @default(ADMIN)
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+  profile       Profile?
+  subscription  Subscription?
+
+  posts    post[]
+  comments comment[]
+
+  @@map("users")
+}
